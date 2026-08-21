@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:ui_design/Widget/daily_challange.dart';
 import 'Widget/header.dart';
+import 'Widget/date_selector.dart';
 
 
 void main() {
@@ -33,8 +34,10 @@ class HomeCode extends StatelessWidget {
               child: Column(
                 children: [
                   Header(),
-
+                  SizedBox(height: 20), // gives space between both Widget in final UI
                   DailyChallange(),
+
+                  DateSelector(),
                 ],
               ),
           ),
