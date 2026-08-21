@@ -15,4 +15,24 @@ class AppCode extends StatelessWidget {
   }
 }
 
-class
+class HomeCode extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Scaffold(
+      backgroundColor: Color(0xFFF5F5F5),
+
+      body: SafeArea(
+          child: Padding(
+              padding: EdgeInsets.all(20),
+
+              child: Column(
+                children: [
+
+                ],
+              ),
+          ),
+      ),
+    );
+  }
+}
