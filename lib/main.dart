@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Widget/header.dart';
 
 void main() {
   runApp(AppCode());
@@ -28,7 +29,7 @@ class HomeCode extends StatelessWidget {
 
               child: Column(
                 children: [
-
+                  Header(),
                 ],
               ),
           ),
