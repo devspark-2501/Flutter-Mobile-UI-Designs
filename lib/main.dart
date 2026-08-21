@@ -4,6 +4,7 @@ import 'package:ui_design/Widget/daily_challange.dart';
 import 'Widget/header.dart';
 import 'Widget/date_selector.dart';
 import 'Widget/planner.dart';
+import 'Widget/footer.dart';
 
 void main() {
   runApp(AppCode());
@@ -40,6 +41,8 @@ class HomeCode extends StatelessWidget {
                   DateSelector(),
                   SizedBox(height: 25), // spacing
                   Planner(),
+                  SizedBox(height: 20), // spacing
+                  Footer(),
                 ],
               ),
           ),
