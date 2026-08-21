@@ -6,7 +6,20 @@ class Header extends StatelessWidget {
     // TODO: implement build
     return Row(
       children: [
-        Image.asset('image/profile.png'),
+        CircleAvatar(
+          radius: 20,
+          backgroundImage: AssetImage('lib/images/profile.png'),
+        ),
+
+        SizedBox(width: 12),
+
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Hello, Tanush"),
+            Text("Monday, 25 April")
+          ],
+        )
       ],
     );
   }

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+
+import 'package:ui_design/Widget/daily_challange.dart';
 import 'Widget/header.dart';
+
 
 void main() {
   runApp(AppCode());
@@ -30,6 +33,8 @@ class HomeCode extends StatelessWidget {
               child: Column(
                 children: [
                   Header(),
+
+                  DailyChallange(),
                 ],
               ),
           ),
