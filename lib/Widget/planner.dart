@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../Pages/workout_page.dart';
 
 class Planner extends StatelessWidget {
   @override
@@ -65,9 +66,13 @@ class Planner extends StatelessWidget {
                   ),
 
                   ElevatedButton(
-                    onPressed: () {},
-
-                    child: Text('Start'),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => WorkoutPage()),
+                        );
+                      },
+                    child: Text("Start"),
                   ),
                 ],
               ),
