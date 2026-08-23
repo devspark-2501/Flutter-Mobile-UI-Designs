@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../Pages/workout_page.dart';
+// import '../Pages/workout_page.dart';
+import '../Pages/loading_page.dart';
 
 class Planner extends StatelessWidget {
   @override
@@ -69,7 +70,7 @@ class Planner extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => WorkoutPage()),
+                          MaterialPageRoute(builder: (context) => LoadingPage()),
                         );
                       },
                     child: Text("Start"),

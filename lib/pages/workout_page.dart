@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
 
-class WorkoutPage extends StatelessWidget {
+class WorkoutPage extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Workout Page"),
-      ),
+  State<WorkoutPage> createState() => _WorkoutPageState();
 
-      body: Center(
-        child: Text(
-          "Welcome to Workout Page!!"
-        ),
-      ),
-    );
   }
+
+  class _WorkoutPageState extends State<WorkoutPage> {
+    TextEditingController exerciseController =
+    TextEditingController();
 }
