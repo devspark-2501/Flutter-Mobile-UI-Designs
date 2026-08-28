@@ -32,4 +32,4 @@ class TimerWidget extends StatefulWidget {
     );
   }
 
-  }
+}
