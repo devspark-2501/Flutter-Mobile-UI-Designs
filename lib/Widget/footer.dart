@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../Pages/timer_page.dart';
+import '../Pages/alarm_page.dart';
 
 class Footer extends StatelessWidget {
   @override
@@ -44,7 +44,7 @@ class Footer extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => TimerPage(),
+                  builder: (context) => AlarmPage(),
                 ),
               );
             },
