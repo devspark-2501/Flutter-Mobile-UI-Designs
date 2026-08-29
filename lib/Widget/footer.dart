@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../Pages/timer_page.dart';
 
 class Footer extends StatelessWidget {
   @override
@@ -38,23 +39,34 @@ class Footer extends StatelessWidget {
             ],
           ),
 
-          Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(
-                Icons.calendar_today,
-                size: 24,
-              ),
-
-              SizedBox(height: 4),
-
-              Text(
-                'Plan',
-                style: TextStyle(
-                  fontSize: 12,
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => TimerPage(),
                 ),
-              ),
-            ],
+              );
+            },
+
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  Icons.calendar_today,
+                  size: 24,
+                ),
+
+                SizedBox(height: 4),
+
+                Text(
+                  'Plan',
+                  style: TextStyle(
+                    fontSize: 12,
+                  ),
+                ),
+              ],
+            ),
           ),
 
           Column(
